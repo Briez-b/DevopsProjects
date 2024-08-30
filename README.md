@@ -1,2 +1,4 @@
-# FirstTerraformScript
-It creates new EC2 instance
+# Repository for all my DevOps projects 
+
+ - FirstTerraform
+ - Jenkins
