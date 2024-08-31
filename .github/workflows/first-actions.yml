@@ -1,6 +1,6 @@
 # test commit to check my local machine as runner
 name: My First GitHub Actions
-# Changed runner to fedora laptop
+# Changed runner to fedora laptop!
 
 on: [push]
 
