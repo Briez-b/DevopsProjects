@@ -1,14 +1,11 @@
-FROM ubuntu
+FROM python:3
 
 WORKDIR /app
 
 COPY requirements.txt /app
 COPY devops /app
 
-ENV_PIP_BREAK_SYSTEM_PACKAGES 1
-RUN apt-get update && \
-    apt-get install -y python3 python3-pip && \
-    pip install -r requirements.txt && \
+RUN pip install -r requirements.txt && \
     cd devops
 
 ENTRYPOINT ["python3"]
