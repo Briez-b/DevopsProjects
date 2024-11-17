@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "EC2 creation" 
+Resources:
+  MyEc2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: "ami-0084a47cc718c111a"
+      InstanceType: "t3.medium"
+      KeyName: "key_2"
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeviceIndex: "0"
+          SubnetId: "subnet-0f9855acb1778da5a"
+
